@@ -1,0 +1,45 @@
+.main-nav__toggle,
+.main-nav__toggle-dark {
+  background-image: linear-gradient(#39598A, #79D7ED);
+  border: 2px solid #FFF;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.main-nav__toggle-dark {
+  background-image: linear-gradient(#091236, #1E215D);
+  border: 2px solid #6B8096;
+}
+
+.main-nav__item--icons,
+.main-nav__item--icons-light, 
+.main-nav__item--icons-dark {
+  width: 1rem;
+  height: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: grey;
+  font-size: 30px;
+  vertical-align: middle;
+  transition: all 0.3s linear;
+}
+
+.main-nav__item--icons:first-child {
+  transform: translateY(100px);
+}
+
+.main-nav__item--icons-light{
+  transform: translateY(0);
+}
+
+.main-nav__item--icons:nth-child(2) {
+  transform: translateY(0);
+}
+
+.main-nav__item--icons-dark {
+  transform: translateY(-100px);
+}

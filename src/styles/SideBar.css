@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.sidebar {
+  position: fixed;
+  display: block;
+  top: 45px;
+  bottom: 0px;
+  left: 0%;
+  transition: 0.2s;
+  width: 20%;
+  padding-top: 3em;
+  padding-right: 0;
+  padding-bottom: 1.5em;
+  padding-left: 0;
+  background: white;
+  z-index: 140;
+}
+
+.sidebar ul {
+  list-style: none;
+  top: 5%;
+  padding-top: 10%;
+  padding-left: 0;
+}
+
+.sidebar-close {
+  display: none;
+}
+
+#slide:checked+.container .sidebar {
+  left: 0px;
+}

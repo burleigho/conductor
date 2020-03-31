@@ -1,0 +1,14 @@
+.contentbox {
+  background: white;
+  color: grey;
+  width: auto;
+  height: auto;
+  border: 3px solid grey;
+  padding: 8px;
+  margin: 12px 12px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5)
+}
+
+.contentbox:hover {
+  color: pink;
+}

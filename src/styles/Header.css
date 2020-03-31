@@ -1,0 +1,107 @@
+.main-header,
+.main-header-dark {
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: 0.5rem 0;
+   z-index: 150;
+   display: flex;
+   color: inherit;
+   background: inherit;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 0.1rem solid black;
+}
+
+/* .main-header-dark {
+  background: grey;
+  color: white;
+  border-bottom: 0.1rem solid white;
+} */
+
+.main-header__brand {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+.main-header__button--toggle {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: inherit;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.main-header__button--toggle:focus {
+  outline: none;
+}
+.main-header__button--toggle:hover {
+  color: pink;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav__items {
+  margin: 0;
+  display: flex;
+  padding: 0 1rem;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.main-nav__item {
+  margin: 0 16px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  border-bottom: 5px solid pink;
+  color: pink
+}
+
+.main-nav__item--cta {
+  animation: wiggle 300ms 1.5s 8 ease-out;
+}
+
+.main-nav__item--cta a {
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: #ff1b68;
+  background: white;
+  border: none;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(10deg)
+  }
+}

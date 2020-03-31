@@ -1,0 +1,16 @@
+.main__content-display {
+  top: 40px;
+  width: auto;
+  z-index: -1;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30vw);
+  grid-template-rows: 30rem;
+  justify-content: center;
+  grid-auto-rows: minmax(8rem, 30vh);
+  grid-auto-flow: row;
+  grid-auto-columns: 5rem;
+  grid-gap: 1rem;
+  color: inherit;
+  background: inherit;
+}

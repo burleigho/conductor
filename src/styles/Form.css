@@ -1,0 +1,35 @@
+.main-form label,
+.main-form input,
+.main-form select {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  width: auto;
+}
+
+.main-form input {
+  margin: 0%;
+  width: 100%;
+  padding: 0%;
+  border: none;
+}
+.main-form  {
+  text-align: left;
+  margin: 0%;
+  width: auto;
+  padding: 0%;
+}
+
+.main-form input:focus,
+.main-form select:focus {
+  outline: none;
+  background: #d8f3df;
+  border: none;
+}
+
+@media (min-width: 40rem) {
+  .main-form {
+    width: 50rem;
+    height: 30rem;
+  }
+}
