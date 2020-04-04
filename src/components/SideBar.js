@@ -1,21 +1,22 @@
 import React from 'react';
 import SideBarAccordion from './SideBarAccordion';
 
-export default function SideBar(props) {
+export default React.forwardRef((props, ref) => {
   let showHideClassName2 = props.show ? "sidebar" : "sidebar-close";
+  console.log(props)
   const items = props.items.map(({ label, id, sub }) => (
            <SideBarAccordion key={id} label={label} sub={sub}/>    
           ))
   return (
-    <React.Fragment>
+    <div ref={ref}>
       <nav className={showHideClassName2}>
        <ul>
           {items}
        </ul>
       </nav>
-    </React.Fragment>
+    </div>
   );
-}
+})
 
 // <input type="checkbox" id="slide" name="" value="" />
 //       <div className="container">

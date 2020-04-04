@@ -2,14 +2,18 @@
 .App-dark {
   display: grid;
   position: fixed;
-  color: grey;
-  grid-template-rows: 3.5rem auto auto;
+  grid-template-rows: 5vh 90vh 5vh;
   width: 100vw;
   grid-template-areas: 
     "header"
     "main"
     "footer";
   z-index: -200;
+}
+
+.App {
+  background: white;
+    color: grey;
 }
 
 .App-dark {
