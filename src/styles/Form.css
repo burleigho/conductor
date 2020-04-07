@@ -1,5 +1,6 @@
 .main-form {
   width: auto;
+  font-family: inherit;
 }
 
 .main-form input {
@@ -8,13 +9,16 @@
   display: block;
   margin-left: 5px;;
   border: none;
+  border-bottom: 1px solid grey;
   font-weight: bold;
-  width: 90%;
+  font-family: inherit;
+  width: auto;
   height: 2rem;
 }
 .main-form > div {
   position: relative;
   height: 3rem;
+  width: 100%;
 }
 input::placeholder {
   position: absolute;
@@ -22,10 +26,15 @@ input::placeholder {
   font-size: 15px;
 }
 
+input:focus {
+  border-bottom: 1px solid red;
+}
+
 label {
   position: absolute;
   margin: auto;
   font-size: 8px;
+  font-family: inherit;
   font-weight: bold;
   opacity: 0;
   top: 0;
@@ -38,17 +47,16 @@ input:focus::placeholder {
 
 input:focus ~ label {
   opacity: 1;
+  transition: opacity 0.3s;
   color: red;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid red;
   margin-left: 5px;
   margin-top: 5px;
 }
 
-
-
 @media (min-width: 40rem) {
   .main-form {
-    width: 60rem;
-    height: 50rem;
+    width: 50vw;
+    height: 50vh;
   }
 }
