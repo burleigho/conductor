@@ -15,7 +15,7 @@
 .accordion-title {
   color: inherit;
   white-space: nowrap;
-  width:300px;
+  width: auto;
   padding: 0 2rem;
   background: none;
   border: none;
@@ -35,6 +35,7 @@
     border-right: 5px solid transparent;
     border-top: 5px solid currentColor;
     float: right;
+    margin-left: 10px
 }
 
 .accordion-title.open:after {
@@ -61,13 +62,15 @@
   transition: 0.3s;
   width: 100%;
   border: none;
-  font-size: 1rem;
+  font-size: calc(10px + (18 - 10) * ((100vw - 300px) / (2400 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(2400 - 300)));
   background: inherit;
 }
 
 .sidebar-children:hover {
   color: white;
-  font-size: 1.1rem;
+  font-size: calc(10.5px + (18 - 10) * ((100vw - 300px) / (2400 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(2400 - 300)));
   background: pink;
 }
 

@@ -1,20 +1,17 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import SideBarAccordion from './SideBarAccordion';
 
 export default React.forwardRef((props, ref) => {
-  let showHideClassName2 = props.show ? "sidebar" : "sidebar-close";
-  console.log(props)
+  const showHideClassName2 = props.show ? "sidebar" : "sidebar-close";
   const items = props.items.map(({ label, id, sub }) => (
            <SideBarAccordion key={id} label={label} sub={sub}/>    
           ))
   return (
-    <div ref={ref}>
-      <nav className={showHideClassName2}>
+      <nav ref={ref} className={showHideClassName2}>
        <ul>
           {items}
        </ul>
       </nav>
-    </div>
   );
 })
 

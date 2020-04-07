@@ -2,14 +2,7 @@ import React from 'react';
 import Form from './Form';
 
 export default function Modal(props) {
-  const showHideClassName = props.show2 ? "modal" : "modal display-none";
-  // const [userInput, setUserInput] = useReducer(
-  //   (state, newState) => ({...state, ...newState}),
-  //   {
-  //   firstName: '',
-  //   lastName: '',
-  //   phoneNumber: ''
-  //   })
+  const showHideClassName = props.show2 ? "modal-main" : "modal display-none";
 
   // const handleChange = evt => {
   //   const name = evt.target.name;
@@ -18,11 +11,11 @@ export default function Modal(props) {
   // }
 
   return (
-    <div className={showHideClassName}>
-      <section className="modal-main">
+      <section className={showHideClassName}>
         <Form items={props.items2} />
-      <button onClick={() => props.setShow2(!props.show2)}>close</button>
+      <button onClick={() => props.setShow2(!props.show2)}>Close</button>
+      <button onClick={() => alert('submit')}>Submit</button>
+      <button onClick={() => alert('clear')}>Clear</button>
       </section>
-    </div>
   );
 };

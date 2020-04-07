@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, Fragment} from 'react';
 //import logo from './logo.svg';
 //import Header from './Header';
 //import Resources from './Resources'
@@ -80,7 +80,7 @@ function App() {
       <div className={darkMode ? "App-dark" : "App"}>
         <div className={setting}></div>
         <Header show={show} setShow={setShow} />
-        {show && (<SideBar ref={ref} items={items} show={show} setShow={setShow} />)}
+        <Fragment>{show && (<SideBar ref={ref} items={items} show={show} setShow={setShow} />)}</Fragment>
         <MainContentContainer />
         <Footer />   
       </div>

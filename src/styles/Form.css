@@ -1,35 +1,54 @@
-.main-form label,
-.main-form input,
-.main-form select {
-  display: block;
-  font-weight: bold;
-  margin-top: 1rem;
+.main-form {
   width: auto;
 }
 
 .main-form input {
-  margin: 0%;
-  width: 100%;
-  padding: 0%;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  margin-left: 5px;;
   border: none;
+  font-weight: bold;
+  width: 90%;
+  height: 2rem;
 }
-.main-form  {
-  text-align: left;
-  margin: 0%;
-  width: auto;
-  padding: 0%;
+.main-form > div {
+  position: relative;
+  height: 3rem;
+}
+input::placeholder {
+  position: absolute;
+  top:-10px;
+  font-size: 15px;
 }
 
-.main-form input:focus,
-.main-form select:focus {
-  outline: none;
-  background: #d8f3df;
-  border: none;
+label {
+  position: absolute;
+  margin: auto;
+  font-size: 8px;
+  font-weight: bold;
+  opacity: 0;
+  top: 0;
+  left: 0;
 }
+
+input:focus::placeholder {
+  opacity: 0
+}
+
+input:focus ~ label {
+  opacity: 1;
+  color: red;
+  border-bottom: 2px solid green;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+
 
 @media (min-width: 40rem) {
   .main-form {
-    width: 50rem;
-    height: 30rem;
+    width: 60rem;
+    height: 50rem;
   }
 }
